@@ -3,97 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="KO WORKS LLC provides accessibility consulting, IT solutions, and professional training.">
-  <title>KO WORKS LLC — Professional Services</title>
+  <meta name="description" content="KO WORKS LLC helps U.S. students connect with Kudan Japanese Language School in Tokyo—summer programs, culture, and a friendly East Coast contact.">
+  <title>KO WORKS LLC — Study Japanese in Japan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: { DEFAULT: '#0f172a', muted: '#1e293b' }
+            ink: { DEFAULT: '#1c1917', muted: '#44403c' },
+            warm: { DEFAULT: '#b45309', hover: '#92400e', soft: '#fffbeb' }
           }
         }
       }
     }
   </script>
 </head>
-<body class="min-h-screen bg-white text-navy antialiased">
-  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-navy focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
+<body class="min-h-screen bg-stone-50 text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
 
-  <header class="border-b border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-3xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
-      <div>
-        <p class="text-sm font-medium uppercase tracking-wide text-slate-600">Limited Liability Company</p>
-        <p class="text-2xl font-semibold text-navy">KO WORKS LLC</p>
-      </div>
-      <nav aria-label="Page sections">
+  <header class="border-b border-stone-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-3xl flex-col gap-4 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
+      <a href="/" class="group">
+        <p class="text-xs font-semibold uppercase tracking-wider text-stone-500">KO WORKS LLC</p>
+        <p class="text-xl font-semibold text-ink group-hover:text-warm">Study in Japan</p>
+      </a>
+      <nav aria-label="Primary">
         <ul class="flex flex-wrap gap-6 text-sm font-medium">
-          <li><a class="text-navy underline decoration-slate-300 underline-offset-4 hover:decoration-navy focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-navy" href="#about">About</a></li>
-          <li><a class="text-navy underline decoration-slate-300 underline-offset-4 hover:decoration-navy focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-navy" href="#services">Services</a></li>
-          <li><a class="text-navy underline decoration-slate-300 underline-offset-4 hover:decoration-navy focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-navy" href="#about-me">About me</a></li>
-          <li><a class="text-navy underline decoration-slate-300 underline-offset-4 hover:decoration-navy focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-navy" href="#contact">Contact</a></li>
+          <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Study in Japan</a></li>
+          <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/about/">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section id="about" class="mx-auto max-w-3xl px-6 py-14" aria-labelledby="about-heading">
-      <h1 id="about-heading" class="text-3xl font-semibold tracking-tight text-navy sm:text-4xl">Independent consulting and IT services</h1>
-      <p class="mt-6 text-lg leading-relaxed text-navy-muted">
-        KO WORKS LLC is a United States limited liability company delivering accessibility consulting, practical IT solutions, and professional training for organizations that need clear, dependable execution.
+    <section class="border-b border-amber-100 bg-gradient-to-b from-amber-50 to-stone-50" aria-labelledby="hero-heading">
+      <div class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+        <h1 id="hero-heading" class="text-4xl font-semibold tracking-tight text-ink sm:text-5xl">Learn Japanese in Tokyo—starting with summer</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted">
+          KO WORKS LLC is a small U.S. practice on the East Coast. We help Americans find the right fit at <a class="font-medium text-warm underline decoration-amber-300 underline-offset-2 hover:decoration-warm" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">Kudan Japanese Language School</a> and walk you through questions in English, in your time zone.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+          <!-- CALENDLY_TODO: replace href with your Calendly URL, e.g. https://calendly.com/yourname/30min -->
+          <a class="inline-flex items-center justify-center rounded-lg bg-warm px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Request a free consultation</a>
+          <a class="inline-flex items-center justify-center rounded-lg border-2 border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-ink hover:border-stone-400 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Summer at Kudan</a>
+        </div>
+        <p class="mt-4 text-sm text-stone-500">Prefer email only? <a class="font-medium text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com">keita@ko-works.com</a></p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-3xl px-6 py-14" aria-labelledby="intro-heading">
+      <h2 id="intro-heading" class="text-2xl font-semibold text-ink">What we do</h2>
+      <p class="mt-4 leading-relaxed text-ink-muted">
+        Choosing a language school abroad can feel overwhelming—course types, dates, housing, and paperwork all at once. We focus on <strong class="font-medium text-ink">summer programs</strong> for high school and college-age learners (our busiest season), and we’re here in the U.S. to answer questions clearly and help you stay organized.
+      </p>
+      <p class="mt-4 leading-relaxed text-ink-muted">
+        Interested in <strong class="font-medium text-ink">short-term</strong>, <strong class="font-medium text-ink">long-term (student visa)</strong>, or other Kudan offerings? You don’t need to sort it out alone—<a class="font-medium text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com?subject=Kudan%20%E2%80%94%20other%20programs">get in touch</a> and we’ll figure out the right path together.
       </p>
     </section>
 
-    <section id="services" class="border-t border-slate-200 bg-slate-50" aria-labelledby="services-heading">
+    <section class="border-t border-stone-200 bg-white" aria-labelledby="paths-heading">
       <div class="mx-auto max-w-3xl px-6 py-14">
-        <h2 id="services-heading" class="text-2xl font-semibold text-navy">What we do</h2>
-        <ul class="mt-8 space-y-8">
-          <li>
-            <h3 class="text-lg font-semibold text-navy">Accessibility consulting</h3>
-            <p class="mt-2 leading-relaxed text-navy-muted">WCAG 2.1-oriented reviews, inclusive design guidance, and CPACC-certified expert input for teams shipping digital products.</p>
+        <h2 id="paths-heading" class="text-2xl font-semibold text-ink">Explore</h2>
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2">
+          <li class="rounded-xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-ink">Study in Japan</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Summer-first overview, why Kudan, and how we help from the U.S.</p>
+            <a class="mt-4 inline-block font-semibold text-warm underline decoration-2 underline-offset-2 hover:text-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Read more</a>
           </li>
-          <li>
-            <h3 class="text-lg font-semibold text-navy">IT solutions</h3>
-            <p class="mt-2 leading-relaxed text-navy-muted">Web development, software maintenance, and hands-on technical implementation aligned with your operational needs.</p>
-          </li>
-          <li>
-            <h3 class="text-lg font-semibold text-navy">Education &amp; training</h3>
-            <p class="mt-2 leading-relaxed text-navy-muted">Workshops on digital accessibility and IT literacy for staff and stakeholders.</p>
+          <li class="rounded-xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-ink">About</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Who runs KO WORKS and why this work matters.</p>
+            <a class="mt-4 inline-block font-semibold text-warm underline decoration-2 underline-offset-2 hover:text-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/about/">Read more</a>
           </li>
         </ul>
       </div>
     </section>
-
-    <section id="about-me" class="mx-auto max-w-3xl border-t border-slate-200 px-6 py-14" aria-labelledby="about-me-heading">
-      <h2 id="about-me-heading" class="text-2xl font-semibold text-navy">About me</h2>
-      <p class="mt-4 leading-relaxed text-navy-muted">
-        I am <span class="font-medium text-navy">Keita Ohshiro</span>, founder and principal of KO WORKS LLC. I work at the intersection of teaching, accessibility, and software delivery.
-      </p>
-      <ul class="mt-6 list-disc space-y-2 pl-5 leading-relaxed text-navy-muted">
-        <li>University lecturer focused on building practical digital and professional skills in the classroom.</li>
-        <li><abbr title="Certified Professional in Accessibility Core Competencies">CPACC</abbr>-certified; regular work on WCAG-aligned reviews, inclusive design, and accessible implementation.</li>
-        <li>Background in web development, application maintenance, and technical consulting for teams that need clear execution.</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="border-t border-slate-200 bg-white" aria-labelledby="contact-heading">
-      <div class="mx-auto max-w-3xl px-6 py-14">
-        <h2 id="contact-heading" class="text-2xl font-semibold text-navy">Contact</h2>
-        <p class="mt-4 leading-relaxed text-navy-muted">
-          For business, procurement, and banking verification inquiries, please reach us by email.
-        </p>
-        <p class="mt-6">
-          <a class="text-lg font-medium text-navy underline decoration-2 underline-offset-4 decoration-navy hover:bg-slate-100 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-navy" href="mailto:keita@ko-works.com">keita@ko-works.com</a>
-        </p>
-      </div>
-    </section>
   </main>
 
-  <footer class="border-t border-slate-200 bg-slate-50">
-    <div class="mx-auto max-w-3xl px-6 py-8">
-      <p class="text-sm text-navy-muted">&copy; <span id="year"></span> KO WORKS LLC. All rights reserved.</p>
+  <footer class="border-t border-stone-200 bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-10">
+      <p class="text-sm text-ink-muted">&copy; <span id="year"></span> KO WORKS LLC. Serving students and families in the United States.</p>
+      <p class="mt-3 text-sm">
+        <a class="text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com">keita@ko-works.com</a>
+      </p>
     </div>
   </footer>
 
