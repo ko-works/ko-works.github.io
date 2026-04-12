@@ -12,7 +12,7 @@
         extend: {
           colors: {
             ink: { DEFAULT: '#1c1917', muted: '#44403c' },
-            warm: { DEFAULT: '#b45309', hover: '#92400e', soft: '#fffbeb' }
+            warm: { DEFAULT: '#b45309', hover: '#92400e' }
           }
         }
       }
@@ -30,7 +30,8 @@
       </a>
       <nav aria-label="Primary">
         <ul class="flex flex-wrap gap-6 text-sm font-medium">
-          <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Study in Japan</a></li>
+          <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="#why-kudan">Why Kudan</a></li>
+          <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="#why-koworks">Why us</a></li>
           <li><a class="text-ink underline decoration-stone-300 underline-offset-4 hover:decoration-warm focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/about/">About</a></li>
         </ul>
       </nav>
@@ -47,37 +48,70 @@
         <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
           <!-- CALENDLY_TODO: replace href with your Calendly URL, e.g. https://calendly.com/yourname/30min -->
           <a class="inline-flex items-center justify-center rounded-lg bg-warm px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Request a free consultation</a>
-          <a class="inline-flex items-center justify-center rounded-lg border-2 border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-ink hover:border-stone-400 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Summer at Kudan</a>
         </div>
-        <p class="mt-4 text-sm text-stone-500">Prefer email only? <a class="font-medium text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com">keita@ko-works.com</a></p>
+        <p class="mt-4 text-sm text-stone-500">Prefer email? <a class="font-medium text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com">keita@ko-works.com</a></p>
       </div>
     </section>
 
-    <section class="mx-auto max-w-3xl px-6 py-14" aria-labelledby="intro-heading">
-      <h2 id="intro-heading" class="text-2xl font-semibold text-ink">What we do</h2>
-      <p class="mt-4 leading-relaxed text-ink-muted">
-        Choosing a language school abroad can feel overwhelming—course types, dates, housing, and paperwork all at once. We focus on <strong class="font-medium text-ink">summer programs</strong> for high school and college-age learners (our busiest season), and we’re here in the U.S. to answer questions clearly and help you stay organized.
-      </p>
-      <p class="mt-4 leading-relaxed text-ink-muted">
-        Interested in <strong class="font-medium text-ink">short-term</strong>, <strong class="font-medium text-ink">long-term (student visa)</strong>, or other Kudan offerings? You don’t need to sort it out alone—<a class="font-medium text-warm underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com?subject=Kudan%20%E2%80%94%20other%20programs">get in touch</a> and we’ll figure out the right path together.
-      </p>
+    <section class="border-b border-stone-200 bg-white" aria-labelledby="summer-heading">
+      <div class="mx-auto max-w-3xl px-6 py-14">
+        <h2 id="summer-heading" class="text-2xl font-semibold text-ink">Summer programs — the best place to start</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          We highlight <strong class="font-medium text-ink">summer programs</strong> at <a class="font-medium text-warm underline decoration-amber-300 underline-offset-2 hover:decoration-warm" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">Kudan Japanese Language School</a> because that's when many U.S. high school and college students can travel—and it's a great introduction to studying in Japan.
+        </p>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Choosing a language school abroad can feel overwhelming—course types, dates, housing, and paperwork all at once. We're here in the U.S. to answer questions clearly and help you stay organized.
+        </p>
+      </div>
     </section>
 
-    <section class="border-t border-stone-200 bg-white" aria-labelledby="paths-heading">
+    <section id="why-kudan" class="border-b border-stone-200" aria-labelledby="why-kudan-heading">
       <div class="mx-auto max-w-3xl px-6 py-14">
-        <h2 id="paths-heading" class="text-2xl font-semibold text-ink">Explore</h2>
-        <ul class="mt-8 grid gap-6 sm:grid-cols-2">
-          <li class="rounded-xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
-            <h3 class="text-lg font-semibold text-ink">Study in Japan</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Summer-first overview, why Kudan, and how we help from the U.S.</p>
-            <a class="mt-4 inline-block font-semibold text-warm underline decoration-2 underline-offset-2 hover:text-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/study-in-japan/">Read more</a>
-          </li>
-          <li class="rounded-xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
-            <h3 class="text-lg font-semibold text-ink">About</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Who runs KO WORKS and why this work matters.</p>
-            <a class="mt-4 inline-block font-semibold text-warm underline decoration-2 underline-offset-2 hover:text-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="/about/">Read more</a>
-          </li>
+        <h2 id="why-kudan-heading" class="text-2xl font-semibold text-ink">Why Kudan</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Kudan offers Japanese language education in Tokyo with a range of programs and activities. Course details, dates, and fees change by year; the school's official site is the source of truth for the latest brochures and application steps.
+        </p>
+        <p class="mt-4">
+          <a class="inline-flex font-semibold text-warm underline decoration-2 underline-offset-2 hover:text-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">Visit Kudan Japanese Language School &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="why-koworks" class="border-b border-stone-200 bg-white" aria-labelledby="why-koworks-heading">
+      <div class="mx-auto max-w-3xl px-6 py-14">
+        <h2 id="why-koworks-heading" class="text-2xl font-semibold text-ink">Why work with KO WORKS</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Many students contact schools directly—and that can work. If you'd rather have a <strong class="font-medium text-ink">U.S.-based, English-speaking contact on the East Coast</strong> who understands both sides, we're here to:
+        </p>
+        <ul class="mt-6 list-disc space-y-3 pl-5 text-ink-muted">
+          <li>Answer questions in plain English, in a time zone closer to yours</li>
+          <li>Help you compare options and stay on top of deadlines and paperwork</li>
+          <li>Be a steady point of contact while you coordinate with the school</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="border-b border-stone-200" aria-labelledby="other-heading">
+      <div class="mx-auto max-w-3xl px-6 py-14">
+        <h2 id="other-heading" class="text-2xl font-semibold text-ink">Other programs at Kudan</h2>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          Kudan also offers <strong class="font-medium text-ink">short-term courses</strong> (from about two weeks), <strong class="font-medium text-ink">long-term study</strong> (up to about two years, student visa may be required), and specialty options. We don't list every track here—requirements and availability vary.
+        </p>
+        <p class="mt-4 leading-relaxed text-ink-muted">
+          If summer isn't the right fit, or you're considering a longer stay, <strong class="font-medium text-ink">reach out</strong>. We'll help you figure out next steps.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-br from-amber-50 to-stone-50" aria-labelledby="cta-heading">
+      <div class="mx-auto max-w-3xl px-6 py-14">
+        <h2 id="cta-heading" class="text-xl font-semibold text-ink">Start with a conversation</h2>
+        <p class="mt-3 text-ink-muted">Tell us your goals and timeline—we'll help you plan your next step. No cost, no pressure.</p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <!-- CALENDLY_TODO: replace href with your Calendly URL -->
+          <a class="inline-flex items-center justify-center rounded-lg bg-warm px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-warm-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20Kudan%20and%20studying%20in%20Japan.%0A%0ABest%2C">Request a free consultation</a>
+          <a class="inline-flex items-center justify-center rounded-lg border-2 border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-ink hover:border-stone-400 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-warm" href="mailto:keita@ko-works.com">Email keita@ko-works.com</a>
+        </div>
       </div>
     </section>
   </main>
