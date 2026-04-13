@@ -30,7 +30,6 @@
       </a>
       <nav aria-label="Primary">
         <ul class="flex gap-6 text-sm font-semibold">
-          <li><a class="text-white/90 underline decoration-white/30 underline-offset-4 hover:decoration-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#contact">Contact</a></li>
           <li><a class="text-white/90 underline decoration-white/30 underline-offset-4 hover:decoration-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="/about/">About</a></li>
         </ul>
       </nav>
@@ -47,10 +46,9 @@
         <p class="mt-5 max-w-xl text-lg leading-relaxed text-stone-200">
           Study Japanese at <strong class="font-semibold text-white">Kudan Japanese Language School</strong> in Tokyo. We're your English-speaking guide on the U.S. East Coast—ask us anything.
         </p>
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <div class="mt-8">
           <!-- CALENDLY_TODO: replace href with your Calendly URL, e.g. https://calendly.com/yourname/30min -->
           <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-base font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
-          <span class="text-sm text-stone-300">or email <a class="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:decoration-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com">keita@ko-works.com</a></span>
         </div>
       </div>
     </section>
@@ -154,8 +152,41 @@
       </div>
     </section>
 
+    <!-- Schedule & Fees -->
+    <section class="border-b border-stone-200 bg-white" aria-labelledby="schedule-heading">
+      <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+        <p class="text-sm font-bold uppercase tracking-wider text-shu">Schedule &amp; fees</p>
+        <h2 id="schedule-heading" class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">What to expect</h2>
+
+        <div class="mt-10 grid gap-8 sm:grid-cols-2">
+          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6">
+            <h3 class="text-lg font-bold text-ink">Typical summer schedule</h3>
+            <ul class="mt-4 space-y-3 text-ink-muted">
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Duration:</strong> 2–4 weeks, July – August</span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Morning:</strong> Japanese language classes (all levels welcome)</span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Afternoon:</strong> Cultural activities, city excursions, weekend day trips</span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Housing:</strong> Options arranged through Kudan (dormitory, homestay, etc.)</span></li>
+            </ul>
+            <p class="mt-4 text-sm text-stone-500">Exact dates and structure vary by year. <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">See Kudan's site</a> for the latest schedule.</p>
+          </div>
+
+          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6">
+            <h3 class="text-lg font-bold text-ink">Fees</h3>
+            <p class="mt-4 leading-relaxed text-ink-muted">
+              Tuition, housing, and activity fees are paid <strong class="font-medium text-ink">directly to Kudan Japanese Language School</strong>. Amounts depend on the program length and housing option you choose.
+            </p>
+            <div class="mt-6 rounded-xl border-2 border-shu/20 bg-shu-soft p-4">
+              <p class="font-bold text-ink">You pay nothing to KO WORKS — zero.</p>
+              <p class="mt-1 text-sm text-ink-muted">Our service is completely free for students and families. KO WORKS is compensated by the school, so using us costs you nothing extra.</p>
+            </div>
+            <p class="mt-4 text-sm text-stone-500">For the latest fee information, <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">check Kudan's site</a> or book a free consultation with us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Other programs -->
-    <section class="border-b border-stone-200 bg-white" aria-labelledby="other-heading">
+    <section class="border-b border-stone-200 bg-stone-50" aria-labelledby="other-heading">
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <h2 id="other-heading" class="text-2xl font-bold text-ink">Not just summer</h2>
         <p class="mt-4 max-w-2xl leading-relaxed text-ink-muted">
@@ -172,10 +203,9 @@
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
         <h2 id="cta-heading" class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to start?</h2>
         <p class="mx-auto mt-4 max-w-lg text-lg text-stone-300">Tell us your goals and timeline. No cost, no pressure — just a conversation to help you plan your next step.</p>
-        <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div class="mt-8">
           <!-- CALENDLY_TODO: replace href with your Calendly URL -->
           <a class="inline-flex items-center justify-center rounded-lg bg-shu px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20Kudan%20and%20studying%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
-          <a class="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-base font-bold text-white hover:border-white/60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com">Email keita@ko-works.com</a>
         </div>
       </div>
     </section>
