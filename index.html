@@ -14,13 +14,16 @@
             ink: { DEFAULT: '#1c1917', muted: '#44403c' },
             shu: { DEFAULT: '#c8362e', hover: '#a52a24', soft: '#fef2f1' },
             ai:  { DEFAULT: '#2e4a6e', light: '#3b5e8a' }
+          },
+          fontSize: {
+            body: ['1.0625rem', { lineHeight: '1.75' }]
           }
         }
       }
     }
   </script>
 </head>
-<body class="min-h-screen bg-stone-50 text-ink antialiased">
+<body class="min-h-screen bg-stone-50 text-body text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
 
   <header class="absolute inset-x-0 top-0 z-30">
@@ -49,7 +52,7 @@
         </p>
         <div class="mt-8">
           <!-- CALENDLY_TODO: replace href with your Calendly URL, e.g. https://calendly.com/yourname/30min -->
-          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-base font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
         </div>
       </div>
     </section>
@@ -64,22 +67,21 @@
           Every summer, high school and college students from around the world head to Tokyo for Kudan's <strong class="font-medium text-ink">Summer Holiday Course</strong> — 3 to 7 weeks of Japanese language classes, cultural activities, and real adventure.
         </p>
 
-        <!-- Photo + details side by side -->
         <div class="mt-10 grid gap-10 md:grid-cols-2 md:items-start">
           <figure class="order-first md:order-last">
             <img class="aspect-[4/3] w-full rounded-2xl object-cover shadow-lg" src="/images/holiday2.jpg" alt="Group of students on a day trip to Fuji-Q Highland amusement park near Mt. Fuji" width="1024" height="576" loading="lazy">
             <figcaption class="mt-3 text-center text-sm text-stone-500">Day trip to Fuji-Q Highland</figcaption>
           </figure>
           <div>
-            <h3 class="text-lg font-bold text-ink">A typical day</h3>
-            <ul class="mt-3 space-y-2.5 text-ink-muted">
+            <h3 class="text-xl font-bold text-ink">A typical day</h3>
+            <ul class="mt-3 space-y-3 text-ink-muted">
               <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Morning:</strong> Japanese language classes — all levels, from complete beginner to advanced</span></li>
               <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Afternoon:</strong> Cultural activities (tea ceremony, calligraphy, cooking), city excursions, and day trips</span></li>
               <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Housing:</strong> Homestay with a Japanese family or dormitory — arranged through Kudan</span></li>
             </ul>
 
-            <h3 class="mt-8 text-lg font-bold text-ink">Beyond the classroom</h3>
-            <p class="mt-2 leading-relaxed text-ink-muted">
+            <h3 class="mt-8 text-xl font-bold text-ink">Beyond the classroom</h3>
+            <p class="mt-2 text-ink-muted">
               Depending on the course, you'll go on overnight trips to <strong class="font-medium text-ink">Atami</strong> (hot springs by the sea) and <strong class="font-medium text-ink">Kyoto</strong> (temples, shrines, and history). Day trips to spots like Fuji-Q Highland are also part of the fun.
             </p>
           </div>
@@ -96,10 +98,9 @@
           Located in central Tokyo, Kudan has been welcoming international students for decades. Small classes, experienced teachers, and a calendar full of cultural activities — from tea ceremony to weekend excursions.
         </p>
         <p class="mt-4">
-          <a class="inline-flex items-center gap-1 font-bold text-shu underline decoration-2 underline-offset-4 hover:text-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">Visit Kudan's website <span aria-hidden="true">&rarr;</span></a>
+          <a class="inline-flex items-center gap-1 text-lg font-bold text-shu underline decoration-2 underline-offset-4 hover:text-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.kudan-japanese-school.com/" rel="noopener noreferrer">Visit Kudan's website <span aria-hidden="true">&rarr;</span></a>
         </p>
 
-        <!-- Photos -->
         <div class="mt-10 grid gap-6 sm:grid-cols-2">
           <figure>
             <img class="aspect-[3/2] w-full rounded-2xl object-cover shadow-lg" src="/images/class2.jpg" alt="Students studying in a classroom at Kudan while a teacher gives a lesson" width="1024" height="682" loading="lazy">
@@ -111,7 +112,6 @@
           </figure>
         </div>
 
-        <!-- Video -->
         <figure class="mt-8">
           <div class="relative w-full overflow-hidden rounded-2xl shadow-lg" style="padding-bottom:56.25%">
             <iframe class="absolute inset-0 h-full w-full" src="https://www.youtube-nocookie.com/embed/1Gl4opT-51Q" title="Kudan Japanese Language School — Introduction video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
@@ -120,14 +120,17 @@
         </figure>
 
         <!-- Campus -->
-        <div class="mt-12 grid gap-8 md:grid-cols-5 md:items-center">
-          <div class="md:col-span-2">
-            <h3 class="text-lg font-bold text-ink">The campus</h3>
-            <p class="mt-3 leading-relaxed text-ink-muted">
-              Kudan sits in central Tokyo, minutes from public transit and surrounded by the energy of the city. Convenience stores, cafés, parks, and shrines — all within walking distance.
+        <div class="mt-14 grid gap-8 md:grid-cols-2 md:items-center">
+          <div>
+            <h3 class="text-xl font-bold text-ink">The campus</h3>
+            <p class="mt-3 text-ink-muted">
+              Kudan is located in the Iidabashi / Kudanshita area of central Tokyo — one of the most well-connected neighborhoods in the city. Multiple subway and JR lines are within a few minutes' walk.
+            </p>
+            <p class="mt-3 text-ink-muted">
+              The surrounding area has everything you need day-to-day: convenience stores, restaurants, cafés, bookstores, parks, and historic shrines. It's a great home base for exploring the rest of Tokyo on weekends, too.
             </p>
           </div>
-          <div class="md:col-span-3 relative w-full overflow-hidden rounded-2xl shadow-lg" style="padding-bottom:35%">
+          <div class="relative w-full overflow-hidden rounded-2xl shadow-lg" style="padding-bottom:75%">
             <iframe class="absolute inset-0 h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0496700842345!2d139.75469719999998!3d35.700395300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3fce24bf3f%3A0xf8009e634610a7df!2sKudan%20Institute%20of%20Japanese%20Language%20and%20culture!5e0!3m2!1sen!2sus!4v1776221738639!5m2!1sen!2sus" title="Kudan Japanese Language School location on Google Maps" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -141,40 +144,40 @@
         <h2 id="schedule-heading" class="mt-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Summer Holiday Courses</h2>
 
         <div class="mt-8 overflow-x-auto rounded-2xl border border-stone-200 shadow-sm">
-          <table class="w-full text-left text-sm">
+          <table class="w-full text-left">
             <thead class="bg-ai text-white">
               <tr>
-                <th class="whitespace-nowrap px-5 py-3.5 font-bold">Course</th>
-                <th class="whitespace-nowrap px-5 py-3.5 font-bold">Date</th>
-                <th class="whitespace-nowrap px-5 py-3.5 font-bold">With homestay</th>
-                <th class="whitespace-nowrap px-5 py-3.5 font-bold">Without homestay</th>
+                <th class="whitespace-nowrap px-5 py-4 text-sm font-bold">Course</th>
+                <th class="whitespace-nowrap px-5 py-4 text-sm font-bold">Date</th>
+                <th class="whitespace-nowrap px-5 py-4 text-sm font-bold">With homestay</th>
+                <th class="whitespace-nowrap px-5 py-4 text-sm font-bold">Without homestay</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-stone-100 bg-white text-ink-muted">
               <tr>
-                <td class="px-5 py-4"><span class="font-medium text-ink">Holiday Course 1</span><br><span class="text-xs text-stone-500">Includes overnight trip to Atami</span></td>
+                <td class="px-5 py-4"><span class="font-semibold text-ink">Holiday Course 1</span><br><span class="text-sm text-stone-500">Includes overnight trip to Atami</span></td>
                 <td class="whitespace-nowrap px-5 py-4">Jul 4 – Aug 1 <span class="text-stone-400">(4 weeks)</span></td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">402,000 JPY</td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">280,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">402,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">280,000 JPY</td>
               </tr>
               <tr class="bg-stone-50/60">
-                <td class="px-5 py-4"><span class="font-medium text-ink">Holiday Course 2</span><br><span class="text-xs text-stone-500">Includes overnight trip to Kyoto</span></td>
+                <td class="px-5 py-4"><span class="font-semibold text-ink">Holiday Course 2</span><br><span class="text-sm text-stone-500">Includes overnight trip to Kyoto</span></td>
                 <td class="whitespace-nowrap px-5 py-4">Aug 1 – Aug 22 <span class="text-stone-400">(3 weeks)</span></td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">385,000 JPY</td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">286,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">385,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">286,000 JPY</td>
               </tr>
               <tr>
-                <td class="px-5 py-4"><span class="font-medium text-ink">Holiday Course 3</span><br><span class="text-xs text-stone-500">Includes both Atami &amp; Kyoto trips</span></td>
+                <td class="px-5 py-4"><span class="font-semibold text-ink">Holiday Course 3</span><br><span class="text-sm text-stone-500">Includes both Atami &amp; Kyoto trips</span></td>
                 <td class="whitespace-nowrap px-5 py-4">Jul 4 – Aug 22 <span class="text-stone-400">(7 weeks)</span></td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">650,000 JPY</td>
-                <td class="whitespace-nowrap px-5 py-4 font-medium text-ink">459,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">650,000 JPY</td>
+                <td class="whitespace-nowrap px-5 py-4 font-semibold text-ink">459,000 JPY</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p class="mt-3 text-sm text-stone-500">*Payment via <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.flywire.com/" rel="noopener noreferrer">Flywire</a>. Transfer fees may apply.</p>
 
-        <p class="mt-6 leading-relaxed text-ink-muted">
+        <p class="mt-6 text-ink-muted">
           All tuition, housing, and activity fees are paid <strong class="font-medium text-ink">directly to Kudan Japanese Language School</strong>. <strong class="font-medium text-ink">You pay nothing to KO WORKS — our service is completely free for students and families.</strong> We are compensated by the school, so using us costs you nothing extra.
         </p>
       </div>
@@ -189,20 +192,20 @@
           You can apply to Kudan directly — many students do. But if you'd like a <strong class="font-medium text-ink">U.S.-based, English-speaking contact</strong> who knows the school and the process, that's us.
         </p>
         <div class="mt-10 grid gap-6 sm:grid-cols-3">
-          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+          <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <p class="text-3xl" aria-hidden="true">&#x1f30e;</p>
-            <h3 class="mt-3 text-lg font-bold text-ink">Same time zone</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Based on the East Coast, we're available when you are — no 13-hour time difference.</p>
+            <h3 class="mt-3 text-xl font-bold text-ink">Same time zone</h3>
+            <p class="mt-2 text-ink-muted">Based on the East Coast, we're available when you are — no 13-hour time difference.</p>
           </div>
-          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+          <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <p class="text-3xl" aria-hidden="true">&#x1f4cb;</p>
-            <h3 class="mt-3 text-lg font-bold text-ink">Paperwork help</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Deadlines, documents, course selection — we'll keep things organized so nothing slips through.</p>
+            <h3 class="mt-3 text-xl font-bold text-ink">Paperwork help</h3>
+            <p class="mt-2 text-ink-muted">Deadlines, documents, course selection — we'll keep things organized so nothing slips through.</p>
           </div>
-          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+          <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <p class="text-3xl" aria-hidden="true">&#x1f91d;</p>
-            <h3 class="mt-3 text-lg font-bold text-ink">Free to you</h3>
-            <p class="mt-2 text-sm leading-relaxed text-ink-muted">Our consultation is free. We're compensated by the school, so there's no extra cost on your end.</p>
+            <h3 class="mt-3 text-xl font-bold text-ink">Free to you</h3>
+            <p class="mt-2 text-ink-muted">Our consultation is free. We're compensated by the school, so there's no extra cost on your end.</p>
           </div>
         </div>
       </div>
@@ -212,10 +215,10 @@
     <section class="border-b border-stone-200 bg-white" aria-labelledby="other-heading">
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <h2 id="other-heading" class="text-2xl font-bold text-ink">Not just summer</h2>
-        <p class="mt-4 max-w-3xl leading-relaxed text-ink-muted">
+        <p class="mt-4 max-w-3xl text-ink-muted">
           Kudan also offers <strong class="font-medium text-ink">short-term courses</strong> (from about two weeks), <strong class="font-medium text-ink">long-term study</strong> (up to about two years, student visa may be required), and specialty programs. We don't list every option here — requirements and availability change.
         </p>
-        <p class="mt-4 leading-relaxed text-ink-muted">
+        <p class="mt-4 text-ink-muted">
           If summer isn't the right timing or you're thinking about a longer stay, <strong class="font-medium text-ink">reach out</strong> — we'll help you figure out which path fits.
         </p>
       </div>
@@ -228,7 +231,7 @@
         <p class="mx-auto mt-4 max-w-lg text-lg text-stone-300">Tell us your goals and timeline. No cost, no pressure — just a conversation to help you plan your next step.</p>
         <div class="mt-8">
           <!-- CALENDLY_TODO: replace href with your Calendly URL -->
-          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20Kudan%20and%20studying%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:keita@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20Kudan%20and%20studying%20in%20Japan.%0A%0ABest%2C">Book a free consultation</a>
         </div>
       </div>
     </section>
