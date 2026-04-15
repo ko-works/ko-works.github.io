@@ -259,7 +259,7 @@
           if (!jpyPerUsd) return;
           document.querySelectorAll('[data-jpy]').forEach(function (td) {
             var jpy = Number(td.getAttribute('data-jpy'));
-            var usd = Math.round(jpy / jpyPerUsd / 100) * 100;
+            var usd = Math.ceil(jpy / jpyPerUsd / 10) * 10;
             td.innerHTML += '<br><span class="text-sm font-normal text-stone-500">≈ $' + usd.toLocaleString('en-US') + ' USD</span>';
           });
           var note = document.getElementById('usd-rate-note');
