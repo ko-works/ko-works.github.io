@@ -46,8 +46,7 @@
           Language classes, cultural immersion, and a once-in-a-lifetime experience at <strong class="font-semibold text-white">Kudan Institute of Japanese Language &amp; Culture</strong> in Tokyo. We provide free, personalized guidance from right here in the U.S.
         </p>
         <div class="mt-8">
-          <!-- CALENDLY_TODO: replace href with your Calendly URL, e.g. https://calendly.com/yourname/30min -->
-          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:hello@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Schedule a free consultation</a>
+          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#contact">Get in touch</a>
         </div>
       </div>
     </section>
@@ -235,15 +234,36 @@
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
+    <!-- ===== CTA / Contact Form ===== -->
     <section id="contact" class="bg-ai" aria-labelledby="cta-heading">
-      <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
-        <h2 id="cta-heading" class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Have questions? Let's talk.</h2>
-        <p class="mx-auto mt-4 max-w-lg text-lg text-stone-300">Share your goals and timeline, and we'll walk you through your options. Free, no obligation.</p>
-        <div class="mt-8">
-          <!-- CALENDLY_TODO: replace href with your Calendly URL -->
-          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:hello@ko-works.com?subject=Free%20consultation%20%E2%80%94%20KO%20WORKS&amp;body=Hi%20Keita%2C%0A%0AI%27d%20like%20to%20schedule%20a%20free%20call%20about%20studying%20Japanese%20in%20Japan.%0A%0ABest%2C">Schedule a free consultation</a>
+      <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+        <div class="mx-auto max-w-xl text-center">
+          <h2 id="cta-heading" class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Have questions? Let's talk.</h2>
+          <p class="mt-4 text-lg text-stone-300">Share your goals and timeline, and we'll walk you through your options. Free, no obligation.</p>
         </div>
+
+        <!-- FORMSPREE_TODO: replace action URL with your Formspree endpoint, e.g. https://formspree.io/f/xxxxxxxx -->
+        <form action="https://formspree.io/f/xojyekzd" method="POST" class="mx-auto mt-10 max-w-xl space-y-5">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-stone-300">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" class="mt-1 w-full rounded-lg border-0 bg-white/10 px-4 py-3 text-white placeholder-stone-400 ring-1 ring-white/20 focus:ring-2 focus:ring-white focus:outline-none">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold text-stone-300">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" class="mt-1 w-full rounded-lg border-0 bg-white/10 px-4 py-3 text-white placeholder-stone-400 ring-1 ring-white/20 focus:ring-2 focus:ring-white focus:outline-none">
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-stone-300">Message</label>
+            <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-lg border-0 bg-white/10 px-4 py-3 text-white placeholder-stone-400 ring-1 ring-white/20 focus:ring-2 focus:ring-white focus:outline-none"></textarea>
+          </div>
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
+          <div class="text-center">
+            <button type="submit" class="inline-flex items-center justify-center rounded-lg bg-shu px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white">Send message</button>
+          </div>
+          <p class="text-center text-sm text-stone-400">Or email us directly at <a class="text-white underline decoration-white/40 underline-offset-2 hover:decoration-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="mailto:hello@ko-works.com">hello@ko-works.com</a></p>
+        </form>
       </div>
     </section>
   </main>
