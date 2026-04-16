@@ -263,10 +263,15 @@
           </div>
           <p class="text-center text-sm text-stone-500">Or email us directly at <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="mailto:hello@ko-works.com">hello@ko-works.com</a></p>
         </form>
-        <div id="form-success" class="mx-auto mt-10 max-w-xl text-center hidden">
-          <p class="text-4xl" aria-hidden="true">&#x1F44B;</p>
-          <p class="mt-4 text-2xl font-bold text-ink">Thanks for reaching out!</p>
-          <p class="mt-2 text-lg text-ink-muted">You should receive a confirmation email shortly — if you don't see it, check your spam folder. Looking forward to connecting with you!</p>
+        <div id="form-success" class="mx-auto mt-10 max-w-xl hidden">
+          <div class="text-center">
+            <p class="text-4xl" aria-hidden="true">&#x1F44B;</p>
+            <p class="mt-4 text-2xl font-bold text-ink">Thanks for reaching out!</p>
+            <p class="mt-2 text-lg text-ink-muted">A confirmation email is on its way. If you don't see it in a few minutes, check your spam folder or make sure the email address below is correct.</p>
+          </div>
+          <div id="submitted-summary" class="mt-8 rounded-2xl border border-stone-200 bg-white p-6 text-sm text-ink-muted">
+          </div>
+          <p class="mt-4 text-center text-sm text-stone-500">Something wrong? <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="#contact" id="form-retry">Submit again</a></p>
         </div>
       </div>
     </section>
@@ -290,6 +295,9 @@
         e.preventDefault();
         btn.disabled = true;
         btn.textContent = 'Sending\u2026';
+        var name = form.querySelector('#name').value;
+        var email = form.querySelector('#email').value;
+        var message = form.querySelector('#message').value;
         fetch(form.action, {
           method: 'POST',
           body: new FormData(form),
@@ -298,6 +306,13 @@
           if (r.ok) {
             form.classList.add('hidden');
             success.classList.remove('hidden');
+            var summary = document.getElementById('submitted-summary');
+            if (summary) {
+              summary.innerHTML =
+                '<p><strong class="text-ink">Name:</strong> ' + name.replace(/</g, '&lt;') + '</p>' +
+                '<p class="mt-1"><strong class="text-ink">Email:</strong> ' + email.replace(/</g, '&lt;') + '</p>' +
+                '<p class="mt-1"><strong class="text-ink">Message:</strong> ' + message.replace(/</g, '&lt;') + '</p>';
+            }
           } else {
             btn.disabled = false;
             btn.textContent = 'Send message';
@@ -309,6 +324,16 @@
           alert('Something went wrong. Please try again or email us directly.');
         });
       });
+      var retry = document.getElementById('form-retry');
+      if (retry) {
+        retry.addEventListener('click', function (e) {
+          e.preventDefault();
+          success.classList.add('hidden');
+          form.classList.remove('hidden');
+          btn.disabled = false;
+          btn.textContent = 'Send message';
+        });
+      }
     })();
 
     (function () {
