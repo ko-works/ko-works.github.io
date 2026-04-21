@@ -129,7 +129,8 @@
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <h2 id="schedule-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">Schedule &amp; Fees</h2>
 
-        <div class="mt-8 overflow-x-auto rounded-2xl border border-stone-200 shadow-sm">
+        <!-- Desktop table (md+) -->
+        <div class="mt-8 hidden rounded-2xl border border-stone-200 shadow-sm md:block">
           <table class="w-full text-left">
             <caption class="sr-only">Summer Holiday Course schedule and fees</caption>
             <thead class="bg-ai text-white">
@@ -161,6 +162,72 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <!-- Mobile cards (below md) -->
+        <div class="mt-8 space-y-4 md:hidden" role="list" aria-label="Summer Holiday Course schedule and fees">
+          <div class="rounded-2xl border border-stone-200 bg-white shadow-sm" role="listitem">
+            <div class="rounded-t-2xl bg-ai px-5 py-3">
+              <p class="font-bold text-white">Holiday Course 1</p>
+              <p class="text-sm text-white/80">Includes overnight trip to Atami</p>
+            </div>
+            <dl class="divide-y divide-stone-100 px-5">
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Date</dt>
+                <dd class="text-right text-ink">Jul 4 – Aug 1 <span class="text-stone-500">(4 weeks)</span></dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">With homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="402000">402,000 JPY</dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Without homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="280000">280,000 JPY</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="rounded-2xl border border-stone-200 bg-white shadow-sm" role="listitem">
+            <div class="rounded-t-2xl bg-ai px-5 py-3">
+              <p class="font-bold text-white">Holiday Course 2</p>
+              <p class="text-sm text-white/80">Includes overnight trip to Kyoto</p>
+            </div>
+            <dl class="divide-y divide-stone-100 px-5">
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Date</dt>
+                <dd class="text-right text-ink">Aug 1 – Aug 22 <span class="text-stone-500">(3 weeks)</span></dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">With homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="385000">385,000 JPY</dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Without homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="286000">286,000 JPY</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="rounded-2xl border border-stone-200 bg-white shadow-sm" role="listitem">
+            <div class="rounded-t-2xl bg-ai px-5 py-3">
+              <p class="font-bold text-white">Holiday Course 3</p>
+              <p class="text-sm text-white/80">Includes both Atami &amp; Kyoto trips</p>
+            </div>
+            <dl class="divide-y divide-stone-100 px-5">
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Date</dt>
+                <dd class="text-right text-ink">Jul 4 – Aug 22 <span class="text-stone-500">(7 weeks)</span></dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">With homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="650000">650,000 JPY</dd>
+              </div>
+              <div class="flex justify-between gap-4 py-3">
+                <dt class="text-sm font-semibold text-stone-500">Without homestay</dt>
+                <dd class="text-right font-semibold text-ink" data-jpy="459000">459,000 JPY</dd>
+              </div>
+            </dl>
+          </div>
         </div>
         <ul class="mt-4 list-disc list-inside space-y-1 text-sm text-stone-500">
           <li>Payment via <a class="font-semibold text-shu underline hover:no-underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="https://www.flywire.com/" rel="noopener noreferrer">Flywire</a>. Transfer fees may apply.</li>
