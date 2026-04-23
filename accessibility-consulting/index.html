@@ -60,39 +60,49 @@
   <main id="main">
 
     <!-- ===== Hero ===== -->
-    <section class="bg-ai" aria-labelledby="hero-heading">
-      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-        <h1 id="hero-heading" class="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl">Is your website accessible?<br>It should be.</h1>
-        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85">
-          ADA-related web accessibility lawsuits have surged in recent years. We help businesses audit their websites against <strong class="font-semibold text-white">WCAG 2.1 AA</strong> standards — and fix what needs fixing — before it becomes a legal problem.
-        </p>
-        <div class="mt-8">
-          <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white" href="#contact">Request a free consultation</a>
+    <section class="bg-white" aria-labelledby="hero-heading">
+      <div class="mx-auto max-w-5xl px-6 pt-20 pb-16 sm:pt-28 sm:pb-20">
+        <div class="grid gap-10 md:grid-cols-[1fr,auto] md:items-center md:gap-16">
+          <div>
+            <h1 id="hero-heading" class="text-4xl font-bold tracking-tight text-ink sm:text-5xl leading-tight">An accessible website reaches more people &mdash; and protects your business.</h1>
+            <p class="mt-6 text-lg leading-relaxed text-ink-muted">
+              We help businesses make their websites work for everyone, including users with disabilities. That means a better experience for your customers, a broader reach for your brand, and meaningful protection against the growing wave of ADA-related lawsuits.
+            </p>
+            <div class="mt-8">
+              <a class="inline-flex items-center justify-center rounded-lg bg-shu px-7 py-4 text-lg font-bold text-white shadow-lg hover:bg-shu-hover focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-shu" href="#contact">Request a free consultation</a>
+            </div>
+          </div>
+          <div class="flex justify-center md:justify-end">
+            <img class="h-40 w-40 sm:h-52 sm:w-52" src="/images/accessibility-logo.svg" alt="" aria-hidden="true" width="512" height="512">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== The Problem ===== -->
-    <section class="border-b border-stone-200 bg-white" aria-labelledby="problem-heading">
+    <!-- ===== The landscape ===== -->
+    <section class="border-t border-stone-200 bg-stone-50" aria-labelledby="landscape-heading">
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-        <h2 id="problem-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">The risk is real</h2>
+        <h2 id="landscape-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">Why it matters now</h2>
         <p class="mt-6 text-lg leading-relaxed text-ink-muted">
-          Under the <strong class="font-medium text-ink">Americans with Disabilities Act (ADA)</strong>, websites are increasingly treated as places of public accommodation. If your site isn't accessible to people with disabilities, your business could face <strong class="font-medium text-ink">demand letters, lawsuits, and costly settlements</strong>.
+          Under the <strong class="font-medium text-ink">Americans with Disabilities Act (ADA)</strong>, websites are increasingly treated as places of public accommodation. Most websites are not yet accessible &mdash; and plaintiffs are paying attention.
         </p>
         <div class="mt-10 grid gap-6 sm:grid-cols-3">
-          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-7">
-            <p class="text-3xl font-bold text-shu">4,000+</p>
-            <p class="mt-1 text-ink-muted">ADA web accessibility lawsuits filed annually in the U.S.</p>
+          <div class="rounded-2xl border border-stone-200 bg-white p-7">
+            <p class="text-4xl font-bold text-shu">3,000+</p>
+            <p class="mt-2 text-ink-muted">website accessibility lawsuits filed in U.S. federal courts in 2025 &mdash; up sharply from the year before.</p>
           </div>
-          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-7">
-            <p class="text-3xl font-bold text-shu">96%</p>
-            <p class="mt-1 text-ink-muted">of top websites have detectable WCAG failures</p>
+          <div class="rounded-2xl border border-stone-200 bg-white p-7">
+            <p class="text-4xl font-bold text-shu">~95%</p>
+            <p class="mt-2 text-ink-muted">of the top one million website home pages have detectable WCAG failures.</p>
           </div>
-          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-7">
-            <p class="text-3xl font-bold text-shu">$10K–$150K+</p>
-            <p class="mt-1 text-ink-muted">typical range for lawsuit settlements</p>
+          <div class="rounded-2xl border border-stone-200 bg-white p-7">
+            <p class="text-4xl font-bold text-shu">~70%</p>
+            <p class="mt-2 text-ink-muted">of these lawsuits target e-commerce websites &mdash; often small and mid-sized businesses.</p>
           </div>
         </div>
+        <p class="mt-6 text-sm text-stone-500">
+          Sources: <a class="underline hover:no-underline" href="https://www.adatitleiii.com/" rel="noopener noreferrer">Seyfarth Shaw ADA Title III Report (2025)</a>; <a class="underline hover:no-underline" href="https://webaim.org/projects/million/" rel="noopener noreferrer">WebAIM Million Report (2025)</a>.
+        </p>
       </div>
     </section>
 
@@ -100,22 +110,18 @@
     <section class="border-b border-stone-200 bg-stone-50" aria-labelledby="services-heading">
       <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <h2 id="services-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">How we help</h2>
-        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        <div class="mt-10 grid gap-6 sm:grid-cols-3">
           <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <h3 class="text-xl font-bold text-ink">WCAG Audit</h3>
-            <p class="mt-3 text-ink-muted">We review your website against WCAG 2.1 Level AA criteria — the standard referenced by the ADA and most accessibility regulations. You receive a detailed report with every issue identified and prioritized.</p>
+            <p class="mt-3 text-ink-muted">We review your website against WCAG 2.1 / 2.2 Level AA criteria &mdash; the standards referenced by the ADA and most accessibility regulations. You receive a detailed report with every issue identified and prioritized.</p>
           </div>
           <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <h3 class="text-xl font-bold text-ink">Remediation Guidance</h3>
-            <p class="mt-3 text-ink-muted">We provide clear, actionable fixes for each issue — written so your development team (or ours) can implement them. No vague recommendations; every fix includes the what, where, and how.</p>
+            <p class="mt-3 text-ink-muted">We provide clear, actionable fixes for each issue &mdash; written so your development team (or ours) can implement them. No vague recommendations; every fix includes the what, where, and how.</p>
           </div>
           <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
             <h3 class="text-xl font-bold text-ink">Compliance Monitoring</h3>
-            <p class="mt-3 text-ink-muted">Accessibility isn't a one-time fix. We offer ongoing monitoring to catch new issues as your site evolves — so you stay compliant as content and features change.</p>
-          </div>
-          <div class="rounded-2xl border border-stone-200 bg-white p-7 shadow-sm">
-            <h3 class="text-xl font-bold text-ink">Training &amp; Awareness</h3>
-            <p class="mt-3 text-ink-muted">We help your team understand accessibility fundamentals — from writing alt text to building keyboard-navigable interfaces — so good practices become part of your workflow.</p>
+            <p class="mt-3 text-ink-muted">Accessibility isn't a one-time fix. We offer ongoing monitoring to catch new issues as your site evolves &mdash; so you stay compliant as content and features change.</p>
           </div>
         </div>
       </div>
@@ -127,19 +133,19 @@
         <h2 id="why-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">Why work with us</h2>
         <div class="mt-10 grid gap-10 md:grid-cols-3 md:items-start">
           <figure class="flex justify-center md:justify-start">
-            <img class="aspect-square w-full max-w-[280px] rounded-2xl object-cover shadow-lg" src="/images/portrait.jpg" alt="Keita Ohshiro, founder of KO WORKS LLC" width="800" height="800" loading="lazy">
+            <img class="aspect-square w-full max-w-[220px] rounded-full object-cover shadow-lg" src="/images/portrait.jpg" alt="Keita Ohshiro, founder of KO WORKS LLC" width="800" height="800" loading="lazy">
           </figure>
           <div class="md:col-span-2">
             <p class="text-lg leading-relaxed text-ink-muted">
-              I'm Keita Ohshiro — a <strong class="font-medium text-ink">CPACC-certified</strong> (Certified Professional in Accessibility Core Competencies) accessibility specialist, University Lecturer, and PhD candidate at NJIT.
+              I'm Keita Ohshiro &mdash; a <strong class="font-medium text-ink">CPACC-certified</strong> accessibility specialist, researcher, and university lecturer.
             </p>
             <p class="mt-4 text-ink-muted">
-              I combine technical knowledge of web standards with a deep understanding of disability rights and inclusive design principles. My goal is to help businesses do the right thing — and protect themselves in the process.
+              I combine technical knowledge of web standards with ongoing research in inclusive design and disability rights. My goal is to help businesses do the right thing &mdash; and protect themselves in the process.
             </p>
             <ul class="mt-6 space-y-3 text-ink-muted">
               <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">CPACC certified</strong> by the International Association of Accessibility Professionals (IAAP)</span></li>
-              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Hands-on technical expertise</strong> — HTML, CSS, ARIA, assistive technology testing</span></li>
-              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">U.S. East Coast hours</strong> — responsive, local communication</span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Actively engaged in accessibility research</strong> across technology and design</span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-shu" aria-hidden="true">&#x25B6;</span><span><strong class="font-medium text-ink">Hands-on technical expertise</strong> &mdash; HTML, CSS, ARIA, assistive technology testing</span></li>
             </ul>
           </div>
         </div>
@@ -197,6 +203,7 @@
   <footer class="border-t border-stone-200 bg-white">
     <div class="mx-auto max-w-5xl px-6 py-10">
       <p class="text-sm text-ink-muted">&copy; <span id="year"></span> KO WORKS LLC.</p>
+      <p class="mt-1 text-xs text-stone-500">Accessibility icon: <a class="underline hover:no-underline" href="https://commons.wikimedia.org/wiki/File:Accessibility_logo.svg" rel="noopener noreferrer">UN / P. Busatto</a>, <a class="underline hover:no-underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
     </div>
   </footer>
 

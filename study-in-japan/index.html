@@ -48,14 +48,14 @@
 <body class="min-h-screen bg-stone-50 text-body text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
 
-  <header class="absolute inset-x-0 top-0 z-30">
+  <header class="border-b border-stone-200 bg-white">
     <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
       <a href="/" class="group">
-        <p class="text-sm font-bold uppercase tracking-wider text-white drop-shadow-md">KO WORKS LLC</p>
+        <p class="text-sm font-bold uppercase tracking-wider text-ink">KO WORKS LLC</p>
       </a>
       <nav class="flex items-center gap-6" aria-label="Main">
-        <a href="/study-in-japan/" class="text-sm font-semibold text-white/90 underline underline-offset-4 drop-shadow-md">Study in Japan</a>
-        <a href="/accessibility-consulting/" class="text-sm font-semibold text-white/90 hover:text-white drop-shadow-md">Accessibility</a>
+        <a href="/study-in-japan/" class="text-sm font-semibold text-ink underline underline-offset-4">Study in Japan</a>
+        <a href="/accessibility-consulting/" class="text-sm font-semibold text-ink-muted hover:text-ink">Accessibility</a>
       </nav>
     </div>
   </header>
@@ -63,10 +63,10 @@
   <main id="main">
 
     <!-- ===== Hero ===== -->
-    <section class="relative flex min-h-[85vh] items-end overflow-hidden" aria-labelledby="hero-heading">
+    <section class="relative flex min-h-[70vh] items-end overflow-hidden" aria-labelledby="hero-heading">
       <img class="absolute inset-0 h-full w-full object-cover" src="/images/holiday1.jpg" alt="Students wearing colorful yukata at a cultural event at Kudan" width="1024" height="468" loading="eager">
       <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/20" aria-hidden="true"></div>
-      <div class="relative z-10 mx-auto w-full max-w-5xl px-6 pb-14 pt-32 sm:pb-20">
+      <div class="relative z-10 mx-auto w-full max-w-5xl px-6 pb-14 pt-20 sm:pb-20">
         <h1 id="hero-heading" class="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Study Japanese in Tokyo this summer</h1>
         <p class="mt-5 max-w-xl text-lg leading-relaxed text-stone-200">
           Language classes, cultural immersion, and a once-in-a-lifetime experience at <strong class="font-semibold text-white">Kudan Institute of Japanese Language &amp; Culture</strong> in Tokyo. We provide free, personalized guidance from right here in the U.S.
@@ -310,7 +310,7 @@
         <h2 id="about-heading" class="text-2xl font-bold tracking-tight text-ink sm:text-3xl">Your Bridge to Japan — Keita Ohshiro</h2>
         <div class="mt-10 grid gap-10 md:grid-cols-3 md:items-start">
           <figure class="flex justify-center md:justify-start">
-            <img class="aspect-square w-full max-w-[280px] rounded-2xl object-cover shadow-lg" src="/images/portrait.jpg" alt="Keita Ohshiro, founder of KO WORKS LLC" width="800" height="800" loading="lazy">
+            <img class="aspect-square w-full max-w-[220px] rounded-full object-cover shadow-lg" src="/images/portrait.jpg" alt="Keita Ohshiro, founder of KO WORKS LLC" width="800" height="800" loading="lazy">
           </figure>
           <div class="md:col-span-2">
             <p class="text-lg leading-relaxed text-ink-muted">
@@ -336,6 +336,7 @@
         </div>
 
         <form id="contact-form" action="https://formspree.io/f/xojyekzd" method="POST" class="mx-auto mt-10 max-w-xl space-y-5">
+          <input type="hidden" name="_subject" value="Study in Japan Inquiry">
           <div class="grid gap-5 sm:grid-cols-2">
             <div>
               <label for="name" class="block text-sm font-semibold text-ink">Name</label>
@@ -373,6 +374,7 @@
   <footer class="border-t border-stone-200 bg-white">
     <div class="mx-auto max-w-5xl px-6 py-10">
       <p class="text-sm text-ink-muted">&copy; <span id="year"></span> KO WORKS LLC.</p>
+      <p class="mt-1 text-xs text-stone-500">Accessibility icon: <a class="underline hover:no-underline" href="https://commons.wikimedia.org/wiki/File:Accessibility_logo.svg" rel="noopener noreferrer">UN / P. Busatto</a>, <a class="underline hover:no-underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
     </div>
   </footer>
 
