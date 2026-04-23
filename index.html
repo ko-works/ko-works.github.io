@@ -44,18 +44,26 @@
       }
     }
   </script>
+  <style>
+    /* WCAG 2.4.7 — visible, consistent focus indicator for keyboard navigation.
+       Applies to any interactive element that doesn't define its own focus style. */
+    :focus-visible {
+      outline: 2px solid #c8362e;
+      outline-offset: 3px;
+    }
+  </style>
 </head>
 <body class="min-h-screen bg-stone-50 text-body text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
 
   <header class="border-b border-stone-200 bg-white">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-5 sm:px-6">
       <a href="/" class="group">
         <p class="text-sm font-bold uppercase tracking-wider text-ink">KO WORKS LLC</p>
       </a>
-      <nav class="flex items-center gap-6" aria-label="Main">
-        <a href="/study-in-japan/" class="text-sm font-semibold text-ink-muted hover:text-ink">Study in Japan</a>
-        <a href="/accessibility-consulting/" class="text-sm font-semibold text-ink-muted hover:text-ink">Accessibility</a>
+      <nav class="flex items-center gap-3 sm:gap-6" aria-label="Main">
+        <a href="/study-in-japan/" class="text-sm font-semibold text-ink-muted hover:text-ink hover:underline hover:underline-offset-4 hover:decoration-2">Study in Japan</a>
+        <a href="/accessibility-consulting/" class="text-sm font-semibold text-ink-muted hover:text-ink hover:underline hover:underline-offset-4 hover:decoration-2">Accessibility Consulting</a>
       </nav>
     </div>
   </header>
@@ -82,7 +90,7 @@
       <div class="mx-auto max-w-3xl px-6 py-14 sm:py-16">
         <h2 id="services-heading" class="sr-only">Services</h2>
         <div class="grid gap-6 sm:grid-cols-2">
-          <a href="/study-in-japan/" class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 transition hover:shadow-md hover:border-stone-300">
+          <a href="/study-in-japan/" class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-stone-300">
             <div class="aspect-[3/2] overflow-hidden">
               <img class="h-full w-full object-cover transition group-hover:scale-105" src="/images/holiday1.jpg" alt="Students wearing colorful yukata at a cultural event at Kudan" width="1024" height="468" loading="eager">
             </div>
@@ -94,7 +102,7 @@
               <p class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-shu group-hover:text-shu-hover">Learn more <span aria-hidden="true">&rarr;</span></p>
             </div>
           </a>
-          <a href="/accessibility-consulting/" class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 transition hover:shadow-md hover:border-stone-300">
+          <a href="/accessibility-consulting/" class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-stone-300">
             <div class="flex aspect-[3/2] items-center justify-center bg-stone-100">
               <img class="h-24 w-24 sm:h-28 sm:w-28" src="/images/accessibility-logo.svg" alt="" aria-hidden="true" width="512" height="512">
             </div>
