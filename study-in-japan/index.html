@@ -2,13 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BV6M554F5"></script>
+  <!-- Google tag (gtag.js) — lazy-loaded on first user interaction or after 3s idle
+       so the main thread is free during initial render. Queued events flush once
+       gtag.js arrives (dataLayer buffering is the documented GA4 mechanism). -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2BV6M554F5');
+    (function () {
+      var GA_ID = 'G-2BV6M554F5';
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+      }
+
+      ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (evt) {
+        window.addEventListener(evt, loadGA, { once: true, passive: true, capture: true });
+      });
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGA, { timeout: 3000 });
+      } else {
+        setTimeout(loadGA, 3000);
+      }
+    })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Study Japanese at Kudan Institute of Japanese Language & Culture in Tokyo. Summer courses, cultural immersion, and free guidance from a U.S.-based advisor.">
@@ -28,6 +53,13 @@
   <meta name="twitter:description" content="Study Japanese at Kudan Institute in Tokyo. Free guidance from a U.S.-based advisor.">
   <meta name="twitter:image" content="https://ko-works.com/images/holiday1.jpg">
   <link rel="stylesheet" href="/dist/tailwind.css">
+
+  <!-- Preload the LCP image (full-bleed hero). -->
+  <link rel="preload" as="image" type="image/webp"
+        href="/images/holiday1-600.webp"
+        imagesrcset="/images/holiday1-600.webp 600w, /images/holiday1.webp 1200w"
+        imagesizes="100vw"
+        fetchpriority="high">
 </head>
 <body class="min-h-screen bg-stone-50 text-body text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
@@ -50,7 +82,7 @@
     <section class="relative flex min-h-[70vh] items-end overflow-hidden" aria-labelledby="hero-heading">
       <picture>
         <source type="image/webp" srcset="/images/holiday1-600.webp 600w, /images/holiday1.webp 1200w" sizes="100vw">
-        <img class="absolute inset-0 h-full w-full object-cover" src="/images/holiday1.jpg" alt="Students wearing colorful yukata at a cultural event at Kudan" width="1200" height="664" loading="eager">
+        <img class="absolute inset-0 h-full w-full object-cover" src="/images/holiday1.jpg" alt="Students wearing colorful yukata at a cultural event at Kudan" width="1200" height="664" loading="eager" fetchpriority="high">
       </picture>
       <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/20" aria-hidden="true"></div>
       <div class="relative z-10 mx-auto w-full max-w-5xl px-6 pb-14 pt-20 sm:pb-20">
