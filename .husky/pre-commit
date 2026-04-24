@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+# Rebuild Tailwind CSS only if HTML/CSS/config files are being committed.
+# This keeps dist/tailwind.css in sync with the HTML classes you actually use.
+if git diff --cached --name-only | grep -qE '\.(html|css|js)$|tailwind\.config\.js|src/input\.css'; then
+  echo "pre-commit: rebuilding Tailwind CSS..."
+  npm run build --silent || {
+    echo "pre-commit: build failed; aborting commit"
+    exit 1
+  }
+  git add dist/tailwind.css
+fi
