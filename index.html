@@ -27,31 +27,7 @@
   <meta name="twitter:title" content="KO WORKS LLC">
   <meta name="twitter:description" content="Study-in-Japan advisory and web accessibility consulting.">
   <meta name="twitter:image" content="https://ko-works.com/images/holiday1.jpg">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: { DEFAULT: '#1c1917', muted: '#44403c' },
-            shu: { DEFAULT: '#c8362e', hover: '#a52a24', soft: '#fef2f1' },
-            ai:  { DEFAULT: '#2e4a6e', light: '#3b5e8a' }
-          },
-          fontSize: {
-            body: ['1.125rem', { lineHeight: '1.75' }]
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    /* WCAG 2.4.7 — visible, consistent focus indicator for keyboard navigation.
-       Applies to any interactive element that doesn't define its own focus style. */
-    :focus-visible {
-      outline: 2px solid #c8362e;
-      outline-offset: 3px;
-    }
-  </style>
+  <link rel="stylesheet" href="/dist/tailwind.css">
 </head>
 <body class="min-h-screen bg-stone-50 text-body text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-white focus:outline focus:outline-2 focus:outline-offset-2">Skip to main content</a>
