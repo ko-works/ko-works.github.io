@@ -1,0 +1,13 @@
+{
+  "name": "ko-works-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KO WORKS LLC marketing site",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/tailwind.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
